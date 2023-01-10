@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pwdChange.css">
+    <title>passwordChange</title>
+</head>
+<body>
+    <div class="mainLogo">
+        <a href="#">
+            <img src="src/Logo_kfsi.png">
+        </a>
+    </div>
+
+    <div class="pwdChangeMsg">비밀번호를 변경해주세요</div>
+    <div class="pwdChange-wrapper">
+        <form method="post" action="서버url" class="pwdChangeForm">
+            <label>새 비밀번호</label>
+            <input type="password" name="newpwd" placeholder="숫자를 섞은 8자이상의 비밀번호 입력">
+            <label>새 비밀번호 확인</label>
+            <input type="password"  name="newpwdCheck">
+            <input type="submit" value="변경">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pwdFind.css">
+    <title>passwordFind</title>
+</head>
+<body>
+    <div class="mainLogo">
+        <a href="#">
+            <img src="src/Logo_kfsi.png">
+        </a>
+    </div>
+
+    <div class="pwdGuideMsg">가입한 E-mail을 입력해주세요</div>
+    <div class="pwdFind-wrapper">
+        <form method="post" action="서버url" class="pwdFindForm">
+            <label>E-mail</label>
+            <input type="email" name="adminEmail" placeholder="가입한 E-mail을 입력해주세요">
+            <input type="submit" value="E-mail 전송">
+            <label>인증번호</label>
+            <input type="number"  name="verifyNumb" placeholder="E-mial을 통해 받은 인증번호를 입력해주세요">
+            <input type="submit" value="확인">
+        </form>
+    </div>
+</body>
+</html>
