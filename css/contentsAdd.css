@@ -1,0 +1,35 @@
+@import "./components/mainlogo.css";
+@import "./root.css";
+@import "./components/mainLayout.css";
+
+.label > span {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.categorySelect {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.categorySelect > select {
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid;
+}
+
+.categorySelect > select:first-child {
+    width: 20%;
+}
+
+.categorySelect > select:last-child {
+    width: 75%;
+}
+
+.contentsUpload > input[type="submit"] {
+    background-color: blanchedalmond;
+}

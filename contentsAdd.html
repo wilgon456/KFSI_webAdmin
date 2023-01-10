@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contentsAdd</title>
+    <link rel="stylesheet" href="css/contentsAdd.css">
+</head>
+<body>
+    <div class="mainLogo">
+        <a href="#">
+            <img src="src/Logo_kfsi.png">
+        </a>
+    </div>
+    <div class="mainWraaper">
+        <div class="mainMenu">
+            <ul class="menuList">
+                <li><a href="#">콘텐츠 추가</a></li>
+                <li><a href="#">콘텐츠 관리</a></li>
+                <li><a href="#">유저 통계</a></li>
+            </ul>
+        </div>
+
+        <form action="서버url" method="post" enctype="multipart/form-data" class="contentsUpload">
+            <div class="label">
+                <span>카테고리 선택</span>
+            </div>
+            <div class="categorySelect">
+                <select>
+                    <option value="M1">대분류1</option>
+                    <option value="M2">대분류2</option>
+                </select>
+                <select>
+                    <option value="S1">소분류1</option>
+                    <option value="S2">소분류2</option>
+                </select>
+            </div>
+            <div class="label">
+                <span>콘텐츠 이름</span>
+            </div>
+            <input type="text" name="contentsId" placeholder="콘텐츠 이름을 입력해주세요">
+            <div class="label">
+                <span>AR마커 및 애니메이션 업로드</span>
+            </div>
+            <div class="fileSubmit">
+                <label>썸네일</label>
+                <input type="file" name="thumbnailImage" placeholder="썸네일 이미지 업로드" accept=".jpg, .png, .jpeg">
+                <label>AR마커</label>
+                <input type="file" name="arMarker" placeholder="썸네일 이미지 업로드" accept=".jpg, .png, .jpeg">
+                <label>애니메이션</label>
+                <input type="file" name="animation" placeholder="애니메이션 업로드" accept=".glb, .fbx">
+            </div>
+            <input type="submit" value="등록">
+        </form>
+    </div>
+
+</body>
+</html>
