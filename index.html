@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>loginPage</title>
+</head>
+<body>
+    <div class="mainLogo">
+        <a href="#">
+            <img src="src/Logo_kfsi.png">
+        </a>
+    </div>
+
+    <div class="greeting">환영합니다. 관리자 로그인을 해주세요!</div>
+    <div class="login-wrapper">
+        <form method="post" action="서버url" class="loginForm">
+            <input type="text" name="userId" placeholder="관리자ID">
+            <input type="password"  name="userPwd" placeholder="관리자비밀번호">
+            <label for="remember-check">
+                <input type="checkbox" class="remember-check">아이디 저장하기
+            </label>
+            <input type="submit" value="로그인">
+            <input type="submit" value="비밀번호찾기">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import "./components/mainlogo.css";
+@import "./root.css";
+
+.siteNavi {
+    text-align: right;
+    color: black;
+    margin-right: 5vh;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainMenu {
+    background-color: whitesmoke;
+    width: 15%;
+    height: 80vh;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mainMenuList li{
+    background-color: blueviolet;
+    color: white;
+    margin-top: 10px;
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.mainContetns {
+    background-color: whitesmoke;
+    width: 80%;
+    height: 80vh;
+    padding: 10px;
+}
