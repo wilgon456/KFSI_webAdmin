@@ -20,51 +20,51 @@
                 <li><a href="#">유저 통계</a></li>
             </ul>
         </div>
-
-        <form action="서버url" method="post" enctype="multipart/form-data" class="contentsUpload">
-            <div class="label">
-                <span>카테고리 선택</span>
-            </div>
-            <div class="categorySelect">
-                <select>
-                    <option value="M1">대분류1</option>
-                    <option value="M2">대분류2</option>
-                </select>
-                <select>
-                    <option value="S1">소분류1</option>
-                    <option value="S2">소분류2</option>
-                </select>
-            </div>
-            <div class="label">
-                <span>콘텐츠 이름</span>
-            </div>
-            <input type="text" class="contentsName" name="contentsId" placeholder="콘텐츠 이름을 입력해주세요">
-            <div class="label">
-                <span>AR마커 및 애니메이션 업로드</span>
-            </div>
-            <div class="fileSubmit">
-                <label>썸네일</label>
-                <input class="uploadName" value="첨부파일" placeholder="첨부파일">
-                <label for="file">파일찾기</label>
-                <input type="file" id= "file" name="thumbnailImage" accept=".jpg, .png, .jpeg">
-            </div>
-            <div class="fileSubmit">
-                <label>AR마커</label>
-                <input class="uploadName" value="첨부파일" placeholder="첨부파일">
-                <label for="file">파일찾기</label>
-                <input type="file" id= "file" name="arMarker" accept=".jpg, .png, .jpeg">
-            </div>
-            <div class="fileSubmit">
-                <label>애니메이션</label>
-                <input class="uploadName" value="첨부파일" placeholder="첨부파일">
-                <label for="file">파일찾기</label>
-                <input type="file" id= "file" name="animation" accept=".glb, .fbx">
-            </div>
-            <div class="submitResult">
-                <input type="submit" value="등록">
-            </div>
-        </form>
+        <div class="context">
+            <form action="서버url" method="post" enctype="multipart/form-data" class="contentsUpload">
+                <div class="label">
+                    <span>카테고리 선택</span>
+                </div>
+                <div class="categorySelect">
+                    <select>
+                        <option value="M1">대분류1</option>
+                        <option value="M2">대분류2</option>
+                    </select>
+                    <select>
+                        <option value="S1">소분류1</option>
+                        <option value="S2">소분류2</option>
+                    </select>
+                </div>
+                <div class="label">
+                    <span>콘텐츠 이름</span>
+                </div>
+                <input type="text" class="contentsName" name="contentsId" placeholder="콘텐츠 이름을 입력해주세요">
+                <div class="label">
+                    <span>AR마커 및 애니메이션 업로드</span>
+                </div>
+                <div class="fileSubmit">
+                    <label>썸네일</label>
+                    <input class="uploadName" value="첨부파일" placeholder="첨부파일">
+                    <label for="file">파일찾기</label>
+                    <input type="file" id= "file" name="thumbnailImage" accept=".jpg, .png, .jpeg">
+                </div>
+                <div class="fileSubmit">
+                    <label>AR마커</label>
+                    <input class="uploadName" value="첨부파일" placeholder="첨부파일">
+                    <label for="file">파일찾기</label>
+                    <input type="file" id= "file" name="arMarker" accept=".jpg, .png, .jpeg">
+                </div>
+                <div class="fileSubmit">
+                    <label>애니메이션</label>
+                    <input class="uploadName" value="첨부파일" placeholder="첨부파일">
+                    <label for="file">파일찾기</label>
+                    <input type="file" id= "file" name="animation" accept=".glb, .fbx">
+                </div>
+                <div class="submitResult">
+                    <input type="submit" value="등록">
+                </div>
+            </form>
+        </div>
     </div>
-
 </body>
 </html>

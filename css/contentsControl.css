@@ -1,0 +1,56 @@
+@import "./components/mainlogo.css";
+@import "./root.css";
+@import "./components/mainLayout.css";
+
+.context > .categorySelect {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+
+.categorySelect > select {
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid;
+}
+
+.categorySelect > select:first-child {
+    width: 20%;
+}
+
+.categorySelect > select:last-child {
+    width: 77%;
+}
+
+.context > .contentsList {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+
+.contentsLabel {
+    border: 3px solid black;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.contentsBtn > span {
+    display: inline-block;
+    background-color: #015EAB;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.control {
+    width: 20%;
+}
+
+.control > input[type="submit"] {
+    width: 50%;
+    background-color: #015EAB;
+    color: white;
+    font-weight: 700;
+}

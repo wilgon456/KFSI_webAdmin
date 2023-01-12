@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contentsControl</title>
+    <link rel="stylesheet" href="css/contentsControl.css">
+</head>
+<body>
+    <div class="mainLogo">
+        <a href="#">
+            <img src="src/Logo_kfsi.png">
+        </a>
+    </div>
+    <div class="mainWraaper">
+        <div class="mainMenu">
+            <ul class="menuList">
+                <li><a href="#">콘텐츠 추가</a></li>
+                <li><a href="#">콘텐츠 관리</a></li>
+                <li><a href="#">유저 통계</a></li>
+            </ul>
+        </div> 
+        <div class="context">
+            <div class="categorySelect">
+                <select>
+                    <option value="M1">대분류1</option>
+                    <option value="M2">대분류2</option>
+                </select>
+                <select>
+                    <option value="S1">소분류1</option>
+                    <option value="S2">소분류2</option>
+                </select>
+            </div>
+            <div class="contentsList">
+                <input type="checkbox" name="checkContents" value="true">
+                <div class="contentsLabel">
+                    <label>콘텐츠 이름</label>
+                </div>
+                <div class="control">
+                    <div class="contentsBtn">
+                        <span>▲</span>
+                        <span>▼</span>
+                    </div>
+                    <input type="submit" name="editContetns" value="edit">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
