@@ -2,6 +2,11 @@
 @import "./root.css";
 @import "./components/mainLayout.css";
 
+.contentsUpload {
+    width: 100vw;
+    justify-content: center;
+}
+
 .label > span {
     font-size: 20px;
     font-weight: 600;
@@ -22,14 +27,75 @@
     border: 2px solid;
 }
 
+.contentsUpload > .label {
+    background-color: whitesmoke;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+
 .categorySelect > select:first-child {
     width: 20%;
 }
 
 .categorySelect > select:last-child {
-    width: 75%;
+    width: 77%;
 }
 
-.contentsUpload > input[type="submit"] {
-    background-color: blanchedalmond;
+
+.submitResult {
+    text-align: right;
+    margin-top: 2vh;
+}
+
+.submitResult > input[type="submit"] {
+    background-color: #015EAB;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contentsName {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.fileSubmit {
+    text-align: right;
+}
+
+.fileSubmit > .uploadName {
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 80%;
+    color: #999999;
+}
+
+.fileSubmit > label[for="file"] {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.fileSubmit input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
 }
